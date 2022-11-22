@@ -1,0 +1,4 @@
+à l'aide de composer du fichier .htaccess, nous supprimons le /public de l'url où est situé index.php et il s'occupe de rediriger au bon endroit
+
+L'url est donc plus propre.
+

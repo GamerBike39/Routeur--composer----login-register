@@ -1,0 +1,16 @@
+{
+    "name": "champ/loginmvc",
+    "autoload": {
+        "psr-4": {
+            "Champ\\LoginMVC\\Router\\": "Router/",
+            "Champ\\LoginMVC\\app\\Controller\\": "Controller/"
+        }
+    },
+    "authors": [
+        {
+            "name": "GamerBike39",
+            "email": "champidub@gmail.com"
+        }
+    ],
+    "require": {}
+}
