@@ -9,12 +9,17 @@ class ComposerStaticInit7cb60c3b2e1cc9192a2150fccffe88ff
     public static $prefixLengthsPsr4 = array (
         'C' => 
         array (
+            'Champ\\LoginMVC\\database\\' => 24,
             'Champ\\LoginMVC\\app\\Controller\\' => 30,
             'Champ\\LoginMVC\\Router\\' => 22,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Champ\\LoginMVC\\database\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/database',
+        ),
         'Champ\\LoginMVC\\app\\Controller\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Controller',

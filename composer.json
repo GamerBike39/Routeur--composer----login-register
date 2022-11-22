@@ -3,7 +3,8 @@
     "autoload": {
         "psr-4": {
             "Champ\\LoginMVC\\Router\\": "Router/",
-            "Champ\\LoginMVC\\app\\Controller\\": "Controller/"
+            "Champ\\LoginMVC\\app\\Controller\\": "Controller/",
+            "Champ\\LoginMVC\\database\\": "database/"
         }
     },
     "authors": [

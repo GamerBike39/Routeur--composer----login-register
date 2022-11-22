@@ -6,6 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Champ\\LoginMVC\\database\\' => array($baseDir . '/database'),
     'Champ\\LoginMVC\\app\\Controller\\' => array($baseDir . '/Controller'),
     'Champ\\LoginMVC\\Router\\' => array($baseDir . '/Router'),
 );
