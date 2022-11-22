@@ -2,9 +2,9 @@
     "name": "champ/loginmvc",
     "autoload": {
         "psr-4": {
-            "Champ\\LoginMVC\\Router\\": "Router/",
-            "Champ\\LoginMVC\\app\\Controller\\": "Controller/",
-            "Champ\\LoginMVC\\database\\": "database/"
+            "Router\\": "Router/",
+            "app\\Controller\\": "Controller/",
+            "database\\": "database/"
         }
     },
     "authors": [

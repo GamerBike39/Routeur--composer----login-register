@@ -1,13 +1,8 @@
-<h1> Je suis la Homepage </h1>
+<?php foreach ($params['livres'] as $livre): ?>
 
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, obcaecati nobis dolor quos eveniet numquam sunt
-    at mollitia ducimus repudiandae ipsa ut? Unde minus consequuntur, nihil incidunt molestias ullam vel!</p>
+<h1><?= $livre->title ?></h1>
+<p><?= $livre->desc ?></p>
+<a href="post/<?= $livre->id ?>">En savoir plus</a>
 
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, obcaecati nobis dolor quos eveniet numquam sunt
-    at mollitia ducimus repudiandae ipsa ut? Unde minus consequuntur, nihil incidunt molestias ullam vel!</p>
 
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, obcaecati nobis dolor quos eveniet numquam sunt
-    at mollitia ducimus repudiandae ipsa ut? Unde minus consequuntur, nihil incidunt molestias ullam vel!</p>
-
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, obcaecati nobis dolor quos eveniet numquam sunt
-    at mollitia ducimus repudiandae ipsa ut? Unde minus consequuntur, nihil incidunt molestias ullam vel!</p>
+<?php endforeach ?>

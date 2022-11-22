@@ -1,8 +1,16 @@
 <?php
 
 namespace App\Controllers;
+require_once '../database/DBconnection.php';
+use Databases\DBConnection;
 
 class Controller {
+
+    protected $db;
+
+    public function __construct(DBConnection $db) {
+        $this->db = $db;
+    }
 
 
     public function view(string $path, array $params = null) {
@@ -16,7 +24,7 @@ class Controller {
         }
 
         $content = ob_get_clean();
-        require VIEWS . 'layouts.php';
+        require VIEWS . 'layout.php';
 
     }
 
