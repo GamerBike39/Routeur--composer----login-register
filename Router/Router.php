@@ -1,8 +1,8 @@
 <?php 
 
 namespace Router;
-require_once "Route.php";
-use Router\Route;
+// require_once "Route.php";
+// use Router\Route;
 
 
 

@@ -3,8 +3,8 @@
     "autoload": {
         "psr-4": {
             "Router\\": "Router/",
-            "app\\Controller\\": "Controller/",
-            "database\\": "database/"
+            "App\\": "app/",
+            "Database\\": "database/"
         }
     },
     "authors": [

@@ -2,7 +2,7 @@
 
 namespace Router;
 
-require_once '../database/DBconnection.php';
+// require_once '../database/DBconnection.php';
 use Databases\DBConnection;
 
 class Route {
@@ -28,12 +28,13 @@ class Route {
         }
     }
 
-    public function execute() {
+    public function execute()
+    {
         $params = explode('@', $this->action);
-        $controller = new $params[0](   $db = new DBConnection('laravel', 'localhost', 'root', ''));
+        $controller = new $params[0](new DBConnection(DB_NAME, DB_HOST, DB_USER, DB_PASSWORD));
         $method = $params[1];
 
-        isset($this->matches[1]) ? $controller->$method($this->matches[1]) : $controller->$method();
+        return isset($this->matches[1]) ? $controller->$method($this->matches[1]) : $controller->$method();
     }
 
 }
