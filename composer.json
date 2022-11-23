@@ -1,17 +1,17 @@
 {
-    "name": "champ/loginmvc",
+    "name": "33642/myapp",
+    "authors": [
+        {
+            "name": "John Smith",
+            "email": "john@example.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
-            "Router\\": "Router/",
+            "Router\\": "routes/",
             "App\\": "app/",
             "Database\\": "database/"
         }
     },
-    "authors": [
-        {
-            "name": "GamerBike39",
-            "email": "champidub@gmail.com"
-        }
-    ],
     "require": {}
 }
